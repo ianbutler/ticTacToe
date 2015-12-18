@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	
+	<script src="../angularJS/angular.js"></script>
+	<script src="app.js"></script>
+	
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body ng-app="app">
+
+	<div ng-controller="AppCtrl">
+		<div class="gameBoard">
+			<div ng-repeat="spot in openSpots track by $index" class="number" ng-click="makeAMove($index)">{{spot}}</div>
+		</div>
+			
+		<div>Current Turn: {{currentTurn}}</div>
+		
+		<div>
+			<button ng-click="reset()">Reset</button>
+		</div>
+	</div>
+
+</body>
+</html>
