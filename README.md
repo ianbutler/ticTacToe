@@ -1,2 +1,2 @@
 # ticTacToe
-Tic Tac Toe logic with a weaksauce front end built to see it work
+Tic Tac Toe logic with a weaksauce display built to see it work
